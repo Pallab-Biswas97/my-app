@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.main_div{
+    background-color: rgb(133, 154, 161);
+    height: 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mid_div:hover{
+    transform:scale(1.1);
+    
+    
+}
+.toDo_style{
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toDo_style li{
+    list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cross{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: blueviolet;
+    border-radius: 20%;
+    font-size: .8em;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 3px;
+    margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.cross:hover{
+    background-color: brown;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mid_div{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    justify-items: center;
+    transition: 1s;
+    padding: 10px;
+    
+}
+
+.main_div h2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: rgb(151, 147, 191);
+    border-radius: 10px;
+    
+}
+
+.listItem{
+    overflow: scroll;
+    width: 300px;
+    height: 270px;
+    overflow-x: hidden  ;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	
+}
+
+
+.items{
+    background-color: rgb(247, 245, 242);
+   border-radius: 20px;
 }
